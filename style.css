@@ -1,0 +1,44 @@
+body{
+background-color:white;
+margin:0;
+
+}
+#title{
+	font-size:20px;
+}
+#tb{
+	padding-top:30px;
+}
+.front{
+	background: #bfbfbf;
+	display: block;
+    line-height: 110px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+	
+	
+}
+.back{
+background: #000000;
+	display: block;
+    line-height: 110px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+	
+}
+	
+.cardstyle{
+	width:150px;
+	height:100px;
+	border: 1px solid;
+	border-color:black;
+    border-radius:0px;
+}

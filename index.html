@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Matching Game</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+ 
+ <div id="header">
+ <p id="title">Matching Game</p>
+<div>
+	  Select local CSV File:
+	  <input id="csv" type="file">
+	  <output id="out">file contents will appear here</output>
+</div>
+	  
+ </div>
+    <div>
+      
+	  
+	  
+	  <table id ="tb" align="center" cellpadding="5">
+		<tr>
+			<td>
+				<div id="card-1" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('1');"> 
+						?
+					</div> 
+					<div id="cardback1" class="back" onclick="unflip('card-1');">
+						<output id="cb1">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-2" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('2');"> 
+						?
+					</div> 
+					<div id="cardback2" class="back" onclick="unflip('card-2');">
+						<output id="cb2">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-3" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('3');"> 
+						?
+					</div> 
+					<div id="cardback3" class="back" onclick="unflip('card-3');">
+						<output id="cb3">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-4" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('4');"> 
+						?
+					</div> 
+					<div id="cardback4" class="back" onclick="unflip('card-4');">
+						<output id="cb4">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-5" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('5');"> 
+						?
+					</div> 
+					<div id="cardback5" class="back" onclick="unflip('card-5');">
+						<output id="cb5">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-6" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('6');"> 
+						?
+					</div> 
+					<div id="cardback6" class="back" onclick="unflip('card-6');">
+						<output id="cb6">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-7" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('7');"> 
+						?
+					</div> 
+					<div id="cardback7" class="back" onclick="unflip('card-7');">
+						<output id="cb7">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-8" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('8');"> 
+						?
+					</div> 
+					<div id="cardback8" class="back" onclick="unflip('card-8');">
+						<output id="cb8">!</output>
+					</div> 
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div id="card-9" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('9');"> 
+						?
+					</div> 
+					<div id="cardback9" class="back" onclick="unflip('card-9');">
+						<output id="cb9">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-10" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('10');"> 
+						?
+					</div> 
+					<div id="cardback10" class="back" onclick="unflip('card-10');">
+						<output id="cb10">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-11" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('11');"> 
+						?
+					</div> 
+					<div id="cardback11" class="back" onclick="unflip('card-11');">
+						<output id="cb11">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-12" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('12');"> 
+						?
+					</div> 
+					<div id="cardback12" class="back" onclick="unflip('card-12');">
+						<output id="cb12">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-13" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('13');"> 
+						?
+					</div> 
+					<div id="cardback13" class="back" onclick="unflip('card-13');">
+						<output id="cb13">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-14" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('14');"> 
+						?
+					</div> 
+					<div id="cardback14" class="back" onclick="unflip('card-14');">
+						<output id="cb14">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-15" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('15');"> 
+						?
+					</div> 
+					<div id="cardback15" class="back" onclick="unflip('card-15');">
+						<output id="cb15">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-16" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('16');"> 
+						?
+					</div> 
+					<div id="cardback16" class="back" onclick="unflip('card-16');">
+						<output id="cb16">!</output>
+					</div> 
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div id="card-17" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('17');"> 
+						?
+					</div> 
+					<div id="cardback17" class="back" onclick="unflip('card-17');">
+						<output id="cb17">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-18" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('18');"> 
+						?
+					</div> 
+					<div id="cardback18" class="back" onclick="unflip('card-18');">
+						<output id="cb18">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-19" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('19');"> 
+						?
+					</div> 
+					<div id="cardback19" class="back" onclick="unflip('card-19');">
+						<output id="cb19">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-20" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('20');"> 
+						?
+					</div> 
+					<div id="cardback20" class="back" onclick="unflip('card-20');">
+						<output id="cb20">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-21" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('21');"> 
+						?
+					</div> 
+					<div id="cardback21" class="back" onclick="unflip('card-21');">
+						<output id="cb21">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-22" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('22');"> 
+						?
+					</div> 
+					<div id="cardback22" class="back" onclick="unflip('card-22');">
+						<output id="cb22">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-23" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('23');"> 
+						?
+					</div> 
+					<div id="cardback23" class="back" onclick="unflip('card-23');">
+						<output id="cb23">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-24" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('24');"> 
+						?
+					</div> 
+					<div id="cardback24" class="back" onclick="unflip('card-24');">
+						<output id="cb24">!</output>
+					</div> 
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<div id="card-25" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('25');"> 
+						?
+					</div> 
+					<div id="cardback25" class="back" onclick="unflip('card-25');">
+						<output id="cb25">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-26" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('26');"> 
+						?
+					</div> 
+					<div id="cardback26" class="back" onclick="unflip('card-26');">
+						<output id="cb26">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-27" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('27');"> 
+						?
+					</div> 
+					<div id="cardback27" class="back" onclick="unflip('card-27');">
+						<output id="cb27">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-28" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('28');"> 
+						?
+					</div> 
+					<div id="cardback28" class="back" onclick="unflip('card-28');">
+						<output id="cb28">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-29" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('29');"> 
+						?
+					</div> 
+					<div id="cardback29" class="back" onclick="unflip('card-29');">
+						<output id="cb29">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-30" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('30');"> 
+						?
+					</div> 
+					<div id="cardback30" class="back" onclick="unflip('card-30');">
+						<output id="cb30">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-31" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('31');"> 
+						?
+					</div> 
+					<div id="cardback31" class="back" onclick="unflip('card-31');">
+						<output id="cb31">!</output>
+					</div> 
+				</div>
+			</td>
+			<td>
+				<div id="card-32" class="cardstyle"> 
+					<div id="cardfront" class="front" onclick="setSelected('32');"> 
+						?
+					</div> 
+					<div id="cardback32" class="back" onclick="unflip('card-32');">
+						<output id="cb32">!</output>
+					</div> 
+				</div>
+			</td>
+		</tr>
+	  </table>
+	  
+	  </div>
+	  
+	  <button onclick="disableObj();">Click to Disable</button>
+	  <button onclick="unflip('card-1');">Click to flip</button>
+	  
+	 
+	  
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery.flip.min.js"></script>
+	<script src="engine.js"></script>
+    
+
+</body>
+</html>
